@@ -71,5 +71,5 @@ li {
 }
 
 .card__btn {
-    @include m.btn(v.$principal, v.$negro);
+    @include m.btn(v.$primario, v.$negro);
 }

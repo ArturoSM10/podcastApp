@@ -35,7 +35,7 @@
     padding: 1rem v.$separacion;
     transition: 0.3s all ease;
     &:hover {
-        color: darken($color, 10);
+        color: darken(v.$primario, 10);
         cursor: pointer;
     }
 }

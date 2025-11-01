@@ -1,0 +1,75 @@
+@use 'variables' as v;
+@use '../base/mixins' as m;
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, 
+*:before, 
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+     font-family: v.$fuentePrincipal;
+     font-size: 2rem;
+     line-height: 1.5;
+}
+
+p {
+    font-size: 2rem;
+    color: v.$negro;
+}
+
+a {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.6rem;
+}
+
+h3 {
+    font-size: 3.2rem;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+[class*="contenedor"] {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.card__price {
+    color: v.$primario;
+    font-size: 6rem;
+    font-weight: 900;
+    line-height: 0;
+}
+
+.card__btn {
+    @include m.btn(v.$principal, v.$negro);
+}

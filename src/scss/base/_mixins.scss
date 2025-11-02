@@ -25,14 +25,15 @@
 }
 
 @mixin btn($backgroundColor, $fontColor) {
-    font-size: 1.4rem;
+    display: inline-block;
+    text-align: center;
+    font-size: 2rem;
     text-transform: capitalize;
     background-color: $backgroundColor;
     color: $fontColor;
-    border: 2px solid v.$primario;
     font-weight: 700;
     margin-top: 2rem;
-    padding: 1rem v.$separacion;
+    padding: 1.2rem 4rem;
     transition: 0.3s all ease;
     &:hover {
         color: darken(v.$primario, 10);

@@ -18,9 +18,14 @@ body {
      line-height: 1.15;
 }
 
+span {
+    text-transform: capitalize;
+}
+
 p {
     font-size: 2rem;
     color: v.$negro;
+    line-height: 2;
 }
 
 a {

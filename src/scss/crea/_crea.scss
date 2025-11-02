@@ -1,0 +1,18 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.crea {
+    padding: 8rem 0;
+    @include m.tablet { 
+        @include m.grid(2, 2rem);
+        align-items: center;
+    }
+
+    &__title--dashedVerde {
+        @include m.titleAfter(v.$primario, v.$secundario);
+    }
+
+    &__p {
+
+    }
+}

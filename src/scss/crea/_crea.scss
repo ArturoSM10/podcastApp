@@ -7,12 +7,4 @@
         @include m.grid(2, 2rem);
         align-items: center;
     }
-
-    &__title--dashedVerde {
-        @include m.titleAfter(v.$primario, v.$secundario);
-    }
-
-    &__p {
-
-    }
 }

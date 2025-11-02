@@ -47,6 +47,7 @@
     margin: 0 0 2rem;
     position: relative;
     color: $fontColor;
+    z-index: 1;
     &::after {
         content: "";
         display: block; 

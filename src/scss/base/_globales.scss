@@ -78,3 +78,11 @@ li {
 .card__btn {
     @include m.btn(v.$primario, v.$negro);
 }
+
+[class*="title--dashedBlanco"] {        
+    @include m.titleAfter(v.$blanco, v.$secundario);
+}
+
+[class*="title--dashedeVerde"] {        
+    @include m.titleAfter(v.$primario, v.$secundario);
+}

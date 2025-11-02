@@ -1,0 +1,26 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.publicidad {
+    background-color: v.$primario;
+    padding: 8rem 0;
+
+    &__contenedor {
+        @include m.tablet { 
+            @include m.grid(2, 4rem);
+            grid-template-columns: 1.5fr 1fr;
+            align-items: center;
+        }
+    }
+    &__img {
+
+        transition: 0.3s transform;
+        &:hover {
+            transform: rotate(8deg) scale(1.1);
+        }
+    }
+
+    &__title--dashedBlanco {
+        margin-top: 5rem;
+    }
+}

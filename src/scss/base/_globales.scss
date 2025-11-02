@@ -83,6 +83,6 @@ li {
     @include m.titleAfter(v.$blanco, v.$secundario);
 }
 
-[class*="title--dashedeVerde"] {        
+[class*="title--dashedVerde"] {        
     @include m.titleAfter(v.$primario, v.$secundario);
 }

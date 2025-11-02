@@ -1,0 +1,17 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.estadisticas__contenedor {
+    padding: 3rem 0; 
+    @include m.tablet { 
+        padding: 8rem 0;
+    }
+
+    .estadisticas__title--dashedVerde {
+        margin: 5rem 0 2rem;
+        text-transform: capitalize;
+        @include m.tablet { 
+            margin-top: 0;
+        }
+    }
+}

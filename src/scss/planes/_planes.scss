@@ -1,0 +1,106 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.planes {
+    padding: 8rem 0;
+    background-color: v.$secundario;
+    color: v.$blanco;
+    @include m.tablet { 
+        padding-bottom: 7rem;
+    }
+    &__title--dashedVerde,
+    &__p{
+        color: v.$blanco;
+    }
+
+    &__cards {
+        @include m.grid(1, 0);
+        @include m.tablet { 
+            @include m.grid(3, 0);
+            align-items: center;
+            padding-top: 8rem;
+            max-width: 80rem;
+            margin: 0 auto;
+        }
+    }
+}
+
+.card {
+    padding: 2rem 4rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    @include m.tablet { 
+        position: relative;
+        padding: 2rem 0;
+        transition: 0.3s transform;
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+    &--blanca {
+        background-color: v.$blanco;
+        &:first-of-type {
+            border: 1px solid #e1e1e1;
+            @include m.tablet { 
+                border: none;
+            }
+        }
+
+        @include m.tablet { 
+            height: 100%;
+        }
+    }
+
+    &--verde {
+        background-color: v.$primario;
+        grid-row: 1/2;
+        @include m.tablet { 
+            grid-row: unset;
+            border-radius: 3rem;
+            height: calc(100% + 10rem);
+            position: relative;
+            z-index: 1;        }
+    }
+
+    &__img {
+        width: 10rem;
+    }
+
+    &-info {
+        text-align: center;
+
+        &__title {
+            color: v.$negro;
+            text-transform: uppercase;
+            font-size: 2.8rem;
+            margin-bottom: 2rem;
+        }
+        &__price {
+            margin: 1.8rem 0;
+            font-weight: 700;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+        }
+        &__p {
+            font-size: 1.6rem;
+            line-height: 1.15;
+            margin-bottom: 2rem;
+        }
+        
+        
+    }
+    .card__btn {
+        margin-top: 0;
+        width: 100%;
+        @include m.tablet { 
+            width: auto;
+        }
+    }
+}
+
+.card__btn--borde-blanco {
+    border: 2px solid v.$blanco;
+}
